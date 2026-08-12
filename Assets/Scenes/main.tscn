@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ck5d1mg2brex8"]
 
+[ext_resource type="Theme" uid="uid://os4paca0yxhx" path="res://Assets/Themes/Margin.tres" id="1_l26l0"]
+
 [node name="Main" type="Control" unique_id=2018232446]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,57 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=299539310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1636880498]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_l26l0")
+
+[node name="Panel" type="Panel" parent="Panel/MarginContainer" unique_id=1552217929]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel/MarginContainer/Panel" unique_id=1484344773]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+split_offsets = PackedInt32Array(384)
+split_offset = 384
+
+[node name="Panel" type="Panel" parent="Panel/MarginContainer/Panel/HSplitContainer" unique_id=1096662761]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel" unique_id=466701418]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_l26l0")
+
+[node name="Panel2" type="Panel" parent="Panel/MarginContainer/Panel/HSplitContainer" unique_id=1683367228]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel2" unique_id=1027992264]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 1460.0
+offset_bottom = 1016.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_l26l0")

@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://d3l17ki7uhs2y"]
+
+[ext_resource type="FontFile" uid="uid://bgc518rt2675f" path="res://Assets/Font/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf" id="1_xuwuv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xuwuv"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.01668266, 0.01668266, 0.01668266, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w03g3"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.01668266, 0.01668266, 0.01668266, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_toxtu"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7gvnj"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.062107187, 0.062107187, 0.062107187, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_bmsjo"]
+
+[node name="VBoxContainer" type="VBoxContainer" unique_id=618540285]
+offset_right = 117.0
+offset_bottom = 52.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="." unique_id=1082598494]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xuwuv")
+text = "xxxxxxxxxx"
+
+[node name="Panel" type="Panel" parent="." unique_id=1544861455]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_xuwuv")
+
+[node name="Label" type="Label" parent="Panel" unique_id=350375494]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_xuwuv")
+text = "0xFF"
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=258542116]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=190562558]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xuwuv")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bmsjo")
+text = "Dec"
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer" unique_id=611905703]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="HBoxContainer" unique_id=1239482317]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xuwuv")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_bmsjo")
+text = "Hex"
+
+[node name="VSeparator2" type="VSeparator" parent="HBoxContainer" unique_id=2042804253]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="HBoxContainer" unique_id=287990388]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_xuwuv")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
+toggle_mode = true
+button_group = SubResource("ButtonGroup_bmsjo")
+text = "Bin"
