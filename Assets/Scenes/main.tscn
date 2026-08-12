@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ck5d1mg2brex8"]
 
 [ext_resource type="Theme" uid="uid://os4paca0yxhx" path="res://Assets/Themes/Margin.tres" id="1_l26l0"]
+[ext_resource type="PackedScene" uid="uid://d3l17ki7uhs2y" path="res://Assets/Scenes/register.tscn" id="2_qplxx"]
 
 [node name="Main" type="Control" unique_id=2018232446]
 layout_mode = 3
@@ -31,6 +32,7 @@ theme = ExtResource("1_l26l0")
 layout_mode = 2
 
 [node name="HSplitContainer" type="HSplitContainer" parent="Panel/MarginContainer/Panel" unique_id=1484344773]
+custom_minimum_size = Vector2(384, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -48,9 +50,19 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 106.0
+offset_bottom = -632.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_l26l0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer" unique_id=904518026]
+layout_mode = 2
+
+[node name="Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=1568101664 instance=ExtResource("2_qplxx")]
+layout_mode = 2
+size_flags_vertical = 1
+title = "A Register"
 
 [node name="Panel2" type="Panel" parent="Panel/MarginContainer/Panel/HSplitContainer" unique_id=1683367228]
 layout_mode = 2
