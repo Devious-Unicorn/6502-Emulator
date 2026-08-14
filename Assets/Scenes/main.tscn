@@ -1,15 +1,58 @@
 [gd_scene format=3 uid="uid://ck5d1mg2brex8"]
 
+[ext_resource type="Script" uid="uid://ba084byet7yep" path="res://Assets/Scripts/main.gd" id="1_elf4b"]
 [ext_resource type="Theme" uid="uid://os4paca0yxhx" path="res://Assets/Themes/Margin.tres" id="1_l26l0"]
 [ext_resource type="PackedScene" uid="uid://d3l17ki7uhs2y" path="res://Assets/Scenes/register.tscn" id="2_qplxx"]
+[ext_resource type="FontFile" uid="uid://kgcg6glsyrih" path="res://Assets/Fonts/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf" id="4_guoxd"]
+[ext_resource type="PackedScene" uid="uid://6jl8paiafg6e" path="res://Assets/Scenes/screen.tscn" id="5_rvsrt"]
 
-[node name="Main" type="Control" unique_id=2018232446]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvsrt"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.06258772, 0.06258772, 0.06258772, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nacht"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_acsc0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.15366128, 0.15366128, 0.15366128, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Main" type="Control" unique_id=2018232446 node_paths=PackedStringArray("sidebarMargin", "memoryMonitor", "hsplit")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_elf4b")
+sidebarMargin = NodePath("Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer")
+memoryMonitor = NodePath("Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer/Memory monitor")
+hsplit = NodePath("Panel/MarginContainer/Panel/HSplitContainer")
 
 [node name="Panel" type="Panel" parent="." unique_id=299539310]
 layout_mode = 1
@@ -50,28 +93,57 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 106.0
-offset_bottom = -632.0
+offset_right = 225.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_l26l0")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer" unique_id=904518026]
 layout_mode = 2
+theme_override_constants/separation = -12
 
-[node name="Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=1568101664 instance=ExtResource("2_qplxx")]
+[node name="A-Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=1568101664 node_paths=PackedStringArray("hsplit") instance=ExtResource("2_qplxx")]
 layout_mode = 2
-size_flags_vertical = 1
-title = "A Register"
+value = 127
+hsplit = NodePath("../../../..")
+marginSize = 32
+
+[node name="B-Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=1571753489 node_paths=PackedStringArray("hsplit") instance=ExtResource("2_qplxx")]
+layout_mode = 2
+hsplit = NodePath("../../../..")
+marginSize = 32
+
+[node name="X-Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=2023655572 node_paths=PackedStringArray("hsplit") instance=ExtResource("2_qplxx")]
+layout_mode = 2
+hsplit = NodePath("../../../..")
+marginSize = 32
+
+[node name="Y-Register" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=271094587 node_paths=PackedStringArray("hsplit") instance=ExtResource("2_qplxx")]
+layout_mode = 2
+hsplit = NodePath("../../../..")
+marginSize = 32
+
+[node name="Memory monitor" type="Button" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=676595465]
+custom_maximum_size = Vector2(320, -1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_guoxd")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_rvsrt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nacht")
+theme_override_styles/hover = SubResource("StyleBoxFlat_acsc0")
+text = "Memory monitor"
+
+[node name="Screen" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel/MarginContainer/VBoxContainer" unique_id=1173598230 instance=ExtResource("5_rvsrt")]
+custom_maximum_size = Vector2(320, 320)
+layout_mode = 2
 
 [node name="Panel2" type="Panel" parent="Panel/MarginContainer/Panel/HSplitContainer" unique_id=1683367228]
 layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/MarginContainer/Panel/HSplitContainer/Panel2" unique_id=1027992264]
 layout_mode = 0
-offset_left = 12.0
-offset_right = 1460.0
-offset_bottom = 1016.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -45.0
+offset_top = 6.0
+offset_right = 1403.0
+offset_bottom = 1022.0
 theme = ExtResource("1_l26l0")

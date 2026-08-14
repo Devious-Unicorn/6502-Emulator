@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dvllxmkiryjmi" path="res://Assets/Scripts/Register.gd" id="1_toxtu"]
 [ext_resource type="Theme" uid="uid://os4paca0yxhx" path="res://Assets/Themes/Margin.tres" id="1_w03g3"]
-[ext_resource type="FontFile" uid="uid://bgc518rt2675f" path="res://Assets/Font/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf" id="1_xuwuv"]
+[ext_resource type="FontFile" uid="uid://kgcg6glsyrih" path="res://Assets/Fonts/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf" id="3_toxtu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ceocv"]
 content_margin_left = 0.0
@@ -10,10 +10,10 @@ content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
 bg_color = Color(0.03336532, 0.03336532, 0.03336532, 0.6)
-corner_radius_top_left = 3
-corner_radius_top_right = 3
-corner_radius_bottom_right = 3
-corner_radius_bottom_left = 3
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 corner_detail = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xuwuv"]
@@ -70,8 +70,8 @@ corner_detail = 5
 offset_right = 426.0
 offset_bottom = 133.0
 scale = Vector2(0.901, 0.901)
-size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_horizontal = 4
+size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_ceocv")
 script = ExtResource("1_toxtu")
 titleLabel = NodePath("MarginContainer/VBoxContainer/Panel2/Label")
@@ -79,6 +79,7 @@ valueLabel = NodePath("MarginContainer/VBoxContainer/Panel/Label")
 Bin = NodePath("MarginContainer/VBoxContainer/HBoxContainer/Bin")
 Dec = NodePath("MarginContainer/VBoxContainer/HBoxContainer/Dec")
 Hex = NodePath("MarginContainer/VBoxContainer/HBoxContainer/Hex")
+marginSize = null
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=883102097]
 layout_mode = 2
@@ -104,8 +105,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_xuwuv")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("3_toxtu")
+theme_override_font_sizes/font_size = 32
+text = "Register"
 vertical_alignment = 1
 
 [node name="Panel" type="Panel" parent="MarginContainer/VBoxContainer" unique_id=1544861455]
@@ -121,8 +123,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_xuwuv")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("3_toxtu")
+theme_override_font_sizes/font_size = 32
 text = "0x00"
 vertical_alignment = 1
 
@@ -132,8 +134,8 @@ size_flags_vertical = 3
 
 [node name="Dec" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=190562558]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_xuwuv")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("3_toxtu")
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
@@ -146,8 +148,8 @@ layout_mode = 2
 
 [node name="Hex" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1239482317]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_xuwuv")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("3_toxtu")
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
@@ -161,8 +163,8 @@ layout_mode = 2
 
 [node name="Bin" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=287990388]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_xuwuv")
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("3_toxtu")
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_w03g3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_toxtu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_7gvnj")
