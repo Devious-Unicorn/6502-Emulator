@@ -2,19 +2,19 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://d0r52520p3gfa"
-path="res://.godot/imported/FiraCode-Light.ttf-5b3954f4c04130aaca5d479589da8e95.fontdata"
+uid="uid://kgcg6glsyrih"
+path="res://.godot/imported/FiraCode-Regular.ttf-8723e847f5e1153841ba0349d873cbe8.fontdata"
 
 [deps]
 
-source_file="res://Assets/Font/Fira_Code_v6.2/ttf/FiraCode-Light.ttf"
-dest_files=["res://.godot/imported/FiraCode-Light.ttf-5b3954f4c04130aaca5d479589da8e95.fontdata"]
+source_file="res://Assets/Fonts/Fira_Code_v6.2/ttf/FiraCode-Regular.ttf"
+dest_files=["res://.godot/imported/FiraCode-Regular.ttf-8723e847f5e1153841ba0349d873cbe8.fontdata"]
 
 [params]
 
 Rendering=null
 antialiasing=1
-generate_mipmaps=false
+generate_mipmaps=true
 disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
@@ -30,7 +30,12 @@ Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[]
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0)
+}]
 language_support={}
 script_support={}
 opentype_features={}

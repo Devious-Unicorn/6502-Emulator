@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b1tsu7t5xfr8y"
-path="res://.godot/imported/FiraCode-Bold.woff2-bc418180422a2aecf328e88f0843c2fb.fontdata"
+uid="uid://baj25im462l0k"
+path="res://.godot/imported/FiraCode-Bold.woff2-6273b1e3ee1318aa80f4f3fcbd2426ca.fontdata"
 
 [deps]
 
-source_file="res://Assets/Font/Fira_Code_v6.2/woff2/FiraCode-Bold.woff2"
-dest_files=["res://.godot/imported/FiraCode-Bold.woff2-bc418180422a2aecf328e88f0843c2fb.fontdata"]
+source_file="res://Assets/Fonts/Fira_Code_v6.2/woff2/FiraCode-Bold.woff2"
+dest_files=["res://.godot/imported/FiraCode-Bold.woff2-6273b1e3ee1318aa80f4f3fcbd2426ca.fontdata"]
 
 [params]
 

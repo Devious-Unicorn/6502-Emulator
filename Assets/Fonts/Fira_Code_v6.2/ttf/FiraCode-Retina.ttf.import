@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bo63j0pbmexpk"
-path="res://.godot/imported/FiraCode-SemiBold.woff-b7c09b9431f396633e434e5e60614b47.fontdata"
+uid="uid://b7agh3fgeijlt"
+path="res://.godot/imported/FiraCode-Retina.ttf-b6fc5dfd28ae097dc432afb38e6ce52f.fontdata"
 
 [deps]
 
-source_file="res://Assets/Font/Fira_Code_v6.2/woff/FiraCode-SemiBold.woff"
-dest_files=["res://.godot/imported/FiraCode-SemiBold.woff-b7c09b9431f396633e434e5e60614b47.fontdata"]
+source_file="res://Assets/Fonts/Fira_Code_v6.2/ttf/FiraCode-Retina.ttf"
+dest_files=["res://.godot/imported/FiraCode-Retina.ttf-b6fc5dfd28ae097dc432afb38e6ce52f.fontdata"]
 
 [params]
 
